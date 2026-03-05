@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/png" href="kipi_logo.PNG">
+  <meta charset="UTF-8" />
+  <title>Gracias por tu compra | KIPI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f5f5f5;
+      color: #333333;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .card {
+      background-color: #faf9f6; /* un blanco cálido como el ejemplo */
+      border-radius: 12px;
+      padding: 40px 32px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+      margin-bottom: 48px;
+    }
+
+    .logo {
+      margin-bottom: 16px;
+    }
+
+    .logo-placeholder {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #e5e5e5;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden; /* recorta la imagen en círculo */
+    }
+
+    .logo-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* la imagen llena el círculo */
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 12px;
+      color: #333333;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      font-weight: 600;
+      color: #555555;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #666666;
+      max-width: 650px;
+      margin: 0 auto 24px auto;
+    }
+
+    .primary-button {
+      display: inline-block;
+      margin-top: 12px;
+      background-color: #27ae60; /* verde estilo ejemplo */
+      color: #ffffff;
+      padding: 14px 40px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(39, 174, 96, 0.25);
+      transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+    }
+
+    .primary-button:hover {
+      background-color: #219150;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(39, 174, 96, 0.35);
+    }
+
+    .primary-button:active {
+      transform: translateY(0);
+      box-shadow: 0 3px 8px rgba(39, 174, 96, 0.3);
+    }
+
+    .small-note {
+      font-size: 13px;
+      color: #888888;
+      margin-top: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      color: #777777;
+      font-size: 14px;
+    }
+
+    .footer strong {
+      color: #444444;
+    }
+
+    .social-text {
+      margin-top: 16px;
+      margin-bottom: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #555;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    .social-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.1s ease;
+    }
+
+    .social-icon.instagram {
+      background: radial-gradient(circle at 30% 30%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+
+    .social-icon.facebook {
+      background-color: #1877f2;
+    }
+
+    .social-icon.twitter {
+      background-color: #000000; /* X */
+    }
+
+    .social-icon.gmail {
+      background-color: #db4437;
+    }
+
+    .social-icon i {
+      font-size: 18px;
+    }
+
+    .social-icon:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      opacity: 0.92;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 28px 20px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .primary-button {
+        width: 100%;
+      }
+    }
+  </style>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <!-- Logo KIPI circular -->
+      <div class="logo">
+        <div class="logo-placeholder">
+          <img src="kipi_logo.PNG" alt="KIPI">
+        </div>
+      </div>
+
+      <h1>¡Gracias por ser parte de KIPI!</h1>
+      <p class="subtitle">Tu pago se ha realizado con éxito.</p>
+
+      <p>
+        Nos alegra muchísimo que ahora formes parte de KIPI. A partir de este momento,
+        nuestro equipo estará acompañándote en cada paso para que aproveches al máximo tu nueva membresía.
+      </p>
+      <p>
+        Para empezar a usar KIPI Pro, por favor haz clic en el botón de abajo. 
+        Si tiene algun problema no dudes en contactarnos : sebasrojaskipi@gmail.com
+      </p>
+
+      <a
+        class="primary-button"
+        href="https://wa.me/4915153924850?text=%40!!kipiproactivado!!%40"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ir al WhatsApp de KIPI
+      </a>
+
+      <p class="small-note">
+        Al presionar el botón, aceptas los <strong>Términos y Condiciones y la Política de Privacidad</strong>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p><strong>KIPI</strong> &mdash; Gracias por confiar en nosotros.</p>
+
+      <p class="social-text">Síguenos también en nuestras redes sociales</p>
+
+      <div class="social-icons">
+        <!-- Instagram -->
+        <a class="social-icon instagram"
+          href="https://www.instagram.com/kipiperu_"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram KIPI">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- Facebook -->
+        <a class="social-icon facebook"
+          href="https://www.facebook.com/profile.php?id=61584961561514"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook KIPI">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+          <!-- X / Twitter -->
+        <a class="social-icon twitter"
+          href="https://x.com/?lang=de"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X (Twitter) KIPI">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+          <!-- Gmail / correo -->
+        <a class="social-icon gmail"
+          href="mailto:sebasrojaskipi@gmail.com"
+          aria-label="Correo a KIPI">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
